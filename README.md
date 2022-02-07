@@ -9,11 +9,11 @@
 - database sqlite - gia presente e configurato nel file .env.example
 
 ## Comandi per attivare il progetto
-- da dentro la macchina docker lanciare
-  - cp .env.example .env
-  - composer install
-  - npm install (opzionale)
-  - php artisan migrate
+- docker-compose up php
+    - lancia direttamente il comando per attivare la php unit
+    - al suo interno commentati sono presenti altri due comandi:
+        - uno per lanciare un web server in modo da poter testare le api con postman o simili
+        - per aprire una shell direttamente dentro alla container
 
 ## Route create dentro al middleware
 ### (escluse dal middleware dentro il controller le route register e login)
